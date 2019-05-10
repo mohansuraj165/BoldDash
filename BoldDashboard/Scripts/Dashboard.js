@@ -9,6 +9,7 @@ function getDashboardData() {
         DisplayError("Incorrect input");
     }
     else {
+        $('#loading').removeClass('hidden')
         $.ajax({
             url: 'Home/GetDashboardData',
             async: 'false',
@@ -19,13 +20,16 @@ function getDashboardData() {
             success: function (data) {
                 if (data.success) {
                     UpdateDashboard(data);
+                    $('#loading').addClass('hidden')
                 }
                 else {
                     DisplayError(data.error)
+                    $('#loading').addClass('hidden')
                 }
             },
             error: function (xhr, status, error) {
                 DisplayError(error);
+                $('#loading').addClass('hidden')
             }
         });
     }
