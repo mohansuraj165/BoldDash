@@ -158,6 +158,8 @@
     <Compile Include="Models\ClientType.cs" />
     <Compile Include="Models\Data.cs" />
     <Compile Include="Models\Next.cs" />
+    <Compile Include="Models\OperatorAvailability.cs" />
+    <Compile Include="Models\Response.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -199,8 +201,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
